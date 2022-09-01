@@ -12,6 +12,7 @@ const displayMeals = meals => {
    meals.forEach(meal => {
       const mealDiv = document.createElement('div');
       mealDiv.classList.add('col');
+      console.log(meal);
       mealDiv.innerHTML = `
          <div class="card" onclick="loadMealDetail(${meal.idMeal})">
             <img src="${meal.strMealThumb}" class="card-img-top" alt="Image">
